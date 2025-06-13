@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Final Project</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      /* Styling Only Related To THIS Page */
+      .parent-flex {
+        display: flex;
+        background-color: purple;
+        justify-content: space-around;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+
+      .parent-flex img {
+        max-width: 30%;
+        border-radius: 10px;
+      }
+     
+    .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+ 
+      body{
+        font-family: 'Sofia';font-size: 14px;
+        background-image: url("https://img.freepik.com/free-photo/abstract-light-pink-wallpaper-background-image_53876-102526.jpg"); 
+      } 
+      
+    </style>
+  </head>
+  <body>
+    <!-- ⬆⬆⬆⬆ Nav Bar -->
+    <ul class="nav">
+      <li><a href="index.html">🏠</a></li>
+      <li><a href="aboutme.html">💃🏽</a></li>
+      <li><a class="active" href="music.html">📚</a></li>
+      <li><a href="hobbies.html">📝</a></li>
+      <li style="float: right">
+        <a target="_blank" href=""
+          ><img
+            src="https://www.getfocused.no/wp-content/uploads/2022/09/White-YouTube-Logo-Transparent.png"
+            style="width: 25px; margin: -5px"
+        /></a>
+      </li>
+      <li style="float: right">
+        <a target="_blank" href=""
+          ><img
+            src="https://img.icons8.com/win10/512/FFFFFF/instagram-new.png"
+            style="width: 25px; margin: -5px"
+        /></a>
+      </li>
+    </ul>
+    <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
+    <h1> My Library (so far) <img src= "https://cdn.glitch.global/59b84f23-1263-4fb2-8c47-da6c6c5b95ed/giphy%20(5).gif?v=1749799620636" width="70"> </h1>
+<div class="row">
+  <div class="column">
+    <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1688093952l/124932739.jpg" width= "30">
+    <p>
+      ⭐⭐⭐⭐⭐/5 
+      - Rivals to Lovers 🔥
+    </p>
+    <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1721069346i/61374793.jpg" width="30">
+    <p>
+      ⭐⭐⭐⭐⭐/5
+      - Imposter Syndrome
+    </p>
+    <img src="https://m.media-amazon.com/images/I/81egAG-WDjL._AC_UF1000,1000_QL80_.jpg" width="30">
+    <p>
+      ⭐⭐⭐⭐⭐/5 
+      - Arranged Marriage 
+    </p>
+    <img src="https://prodimage.images-bn.com/pimages/9781464224577_p0_v2_s1200x630.jpg" width="30">
+    <p>
+     ⭐⭐⭐⭐⭐/5 
+      - Forced Proximity  
+    </p>
+    <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1680192054i/62994279.jpg" width="30">
+    <p>
+       ⭐⭐⭐⭐⯪/5
+      - Opposites Attract 
+    </p>
+    <img src="https://m.media-amazon.com/images/I/81uN8DteN6L.jpg" width="30">
+    <p>
+       ⭐⭐⭐⭐⭐⭐/5
+      - Beauty and the Beast
+    </p>
+    <img src="https://prodimage.images-bn.com/pimages/9781442472464_p0_v8_s1200x630.jpg" width="30">
+    <p>
+       ⭐⭐⭐⭐/5
+      - Corruption and Imorality 
+    </p>
+  </div>
+  <div class="column">
+    <img src= "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781481497077/the-toll-9781481497077_hr.jpg" width="30">
+    <p>
+     ⭐⭐⭐⭐/5
+      - Abuse of Technology
+    </p>
+    <img src="https://m.media-amazon.com/images/I/81wx+Rwu-9L._UF1000,1000_QL80_.jpg" width="30">
+    <p>
+      ⭐⭐⭐⭐⭐⭐/5
+      - Suspenseful, Triple Killer
+    </p>
+    <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1664729357i/62848145.jpg" width="30">
+    <p>
+       ⭐⭐⭐⭐⭐/5
+      - Plot Twist 
+    </p>
+    <img src= "https://m.media-amazon.com/images/I/71J5HipqseL._UF1000,1000_QL80_.jpg" width="30">
+    <p>
+     ⭐⭐⭐⭐⯪/5
+      - Cozy Mystery 
+    </p>
+    <img src="https://m.media-amazon.com/images/I/710-4CWhVDL._UF1000,1000_QL80_.jpg" width="30">
+    <p>
+      ⭐⭐⭐⯪/5
+      - Cozy Mystery 
+    </p>
+    
+  </div>
+  <div class="column">
+    <img src="https://m.media-amazon.com/images/I/91DY1UITjzL._AC_UF1000,1000_QL80_.jpg" width="30">
+    ⭐⭐⭐⭐⭐/5 
+      - Dark, Supernatural   
+    <img src="https://m.media-amazon.com/images/I/71czhsDK19L._UF1000,1000_QL80_.jpg" width="30">
+    <p>
+      ⭐⭐⭐⭐⭐/5 
+      - Terroism and Manipulation  
+    </p>
+    <img src="https://m.media-amazon.com/images/I/71dQcDoR6iL.jpg" width="30">
+    <p>
+      ⭐⭐⭐⯪/5
+      - Cozy Mystery
+    </p>
+    <img src="https://m.media-amazon.com/images/I/71Rb+f7pWVL.jpg" width="30">
+    <p>
+      ⭐⭐⭐⯪/5
+      - Cozy Mystery
+    </p>
+    <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1592079575i/35838125.jpg" width="30">
+    <p>
+      ⭐⭐⭐⭐/5
+      - Supernatural 
+    </p>
+   
+  </div>
+  <div class="column">
+    
+  </div>
+</div>                
+     <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+  
+    
+  <h2>
+    Quick Quiz! 
+    </h2>
+    
+    
+    <form id="trivia-form">
+      <label>
+        🎥 Which book do you think I enjoyed reading the most? 
+        <select id="trivia-answer">
+          <option value="trivia1"> The Third to Die</option>
+          <option value="trivia2"> The Family Upstairs</option>
+          <option value="trivia3">I hope this doesn't find you</option>
+          <option value="trivia4"> Thunderhead</option>
+        </select>
+      </label>
+      <button type="submit">Check trivia Answer</button>
+    </form>
+    <div id="trivia-result">
+      <p id="trivia-text"></p>
+     </div>
+    <hr />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+    
+    
+   $("#trivia-form").on("submit", function (event) {
+        event.preventDefault();
+
+        var $answer = $("#trivia-answer");
+        var answer = $answer.val();
+
+        if (answer === "trivia3") {
+          $("#trivia-text").text("EAT IT UPPPPPPPPP!!!!");
+        } else if (answer === "trivia2") {
+          $("#trivia-text").text("THE WAY I JUST GASPED, JUMPSCAREEEE A-");
+        } else if (answer === "trivia1") {
+          $("#trivia-text").text("THE WAY I JUST GASPED, JUMPSCAREEEE A-");
+        }  else if (answer === "trivia4") {
+          $("#trivia-text").text("THE WAY I JUST GASPED, JUMPSCAREEEE A-");
+        }
+    }); 
+    
+    </script>
+    
+    
+    
+   
+    
+  </body>
+</html>

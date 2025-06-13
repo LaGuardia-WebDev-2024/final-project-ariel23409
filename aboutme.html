@@ -6,15 +6,21 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
       /* Styling Only Related To THIS Page */
+
+      body {
+        background-image: url("https://img.freepik.com/free-photo/abstract-light-pink-wallpaper-background-image_53876-102526.jpg");
+        font-family: "Sofia";
+        font-size: 14px;
+      }
+
       .parent-flex {
         display: flex;
-        background-color: purple;
         align-items: center;
         justify-content: space-around;
         margin-bottom: 50px;
       }
 
-      .parent-flex img {
+      /*       .parent-flex img {
         width: 150px;
         padding: 20px;
       }
@@ -22,16 +28,62 @@
         background-color: pink;
         padding: 20px;
         margin: 20px;
+      } */
+
+      .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      }
+
+      /* This container is needed to position the front and back side */
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+
+      /* Do an horizontal flip when you move the mouse over the flip box container */
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      /* Position the front and back side */
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+      }
+
+      /* Style the front side (fallback if image is missing) */
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+      }
+
+      /* Style the back side */
+      .flip-card-back {
+        background-color: pink;
+        color: white;
+        transform: rotateY(180deg);
       }
     </style>
   </head>
   <body>
     <!-- ⬆⬆⬆⬆ Nav Bar -->
     <ul class="nav">
-      <li><a href="index.html">Home</a></li>
-      <li><a class="active" href="aboutme.html">About Me</a></li>
-      <li><a href="art.html">Art</a></li>
-      <li><a href="resume.html">Resume</a></li>
+      <li><a href="index.html">🏠</a></li>
+      <li><a class="active" href="aboutme.html">💃🏽</a></li>
+      <li><a href="music.html">📚</a></li>
+      <li><a href="hobbies.html">📝</a></li>
       <li style="float: right">
         <a target="_blank" href=""
           ><img
@@ -49,42 +101,137 @@
     </ul>
 
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1>About Me</h1>
+    <h1>
+      Moi
+      <img
+        src="https://cdn.glitch.global/59b84f23-1263-4fb2-8c47-da6c6c5b95ed/giphy%20(7).gif?v=1749799781041"
+        width="70"
+      />
+    </h1>
     <div class="parent-flex">
       <div class="child-flex">
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-        />
-      </div>
-      <div class="child-flex">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
-        </p>
-      </div>
-    </div>
-    <div class="parent-flex">
-      <div class="child-flex">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
-        </p>
-      </div>
-      <div class="child-flex">
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-        />
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="https://cdn.glitch.global/59b84f23-1263-4fb2-8c47-da6c6c5b95ed/IMG_8900.JPG?v=1749497467274"
+                alt="Avatar"
+                style="width: 300px; height: 300px"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h1>Arielle Remy</h1>
+              <p>Senior :))))</p>
+              <p>Instrumental Major</p>
+              <img
+                src="https://cdn.glitch.global/59b84f23-1263-4fb2-8c47-da6c6c5b95ed/IMG_7614.jpg?v=1749683032135"
+                alt="Avatar"
+                style="width: 150px; height: 150px"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <html>
+      <head>
+        <style>
+          div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+          }
+
+          div.gallery:hover {
+            border: 1px solid #777;
+          }
+
+          div.gallery img {
+            width: 100%;
+            height: auto;
+          }
+
+          div.desc {
+            padding: 15px;
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="gallery">
+          <a target="_blank" href="img_5terre.jpg">
+            <img
+              src="https://cdn.glitch.global/59b84f23-1263-4fb2-8c47-da6c6c5b95ed/IMG_7614.jpg?v=1749683032135"
+              alt="Cinque Terre"
+              width="600"
+              height="400"
+            />
+          </a>
+          <div class="desc">
+            I play three instruments: Viola, Violin and Piano
+          </div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="img_forest.jpg">
+            <img
+              src="https://cdn.glitch.global/59b84f23-1263-4fb2-8c47-da6c6c5b95ed/IMG_0443.JPG?v=1749683769506"
+              alt="Forest"
+              width="600"
+              height="400"
+            />
+          </a>
+          <div class="desc">
+            I'm a bit obssessed with this temu version of Episode called
+            Choices😐
+          </div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="img_lights.jpg">
+            <img
+              src="https://cdn.glitch.global/59b84f23-1263-4fb2-8c47-da6c6c5b95ed/d3aa208d-5f67-41e9-8878-2e031b6fad0f.JPG?v=1749685144923"
+              alt="Northern Lights"
+              width="600"
+              height="400"
+            />
+          </a>
+          <div class="desc">
+            Fun Fact: I am not a real person oopsie daisies😎🙂‍↕️
+          </div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="img_lights.jpg">
+            <img
+              src="https://cdn.glitch.global/59b84f23-1263-4fb2-8c47-da6c6c5b95ed/IMG_9920.jpg?v=1749238057565"
+              alt="Northern Lights"
+              width="600"
+              height="400"
+            />
+          </a>
+          <div class="desc">I adore taking photos of the sky</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="img_lights.jpg">
+            <img
+              src="https://cdn.glitch.global/59b84f23-1263-4fb2-8c47-da6c6c5b95ed/IMG_8605.jpg?v=1749798456137"
+              alt="Northern Lights"
+              width="600"
+              height="400"
+            />
+          </a>
+          <div class="desc">Another one thank you😌</div>
+        </div>
+
+        <link
+          href="https://fonts.googleapis.com/css?family=Sofia"
+          rel="stylesheet"
+        />
+      </body>
+    </html>
   </body>
 </html>
